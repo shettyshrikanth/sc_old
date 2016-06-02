@@ -41,5 +41,5 @@ Go into the application's new project directory (with the "cd" shown) and comple
 
 > sbt
 
-> [shopping-cart] $ test
+> test
 
