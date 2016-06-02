@@ -34,15 +34,12 @@ Setup
 To get you going with this application, just follow along:
 
 In a directory where you wish to clone this project from git:
-> $ git clone https://github.com/shettyshrikanth/shopping_cart.git
+> git clone https://github.com/shettyshrikanth/shopping_cart.git
 
 Go into the application's new project directory (with the "cd" shown) and complete the following:
-> $ cd shopping-cart
+> cd shopping-cart
 
-> $ activator
-
-> [shopping-cart] $ update-classifiers
-
-> [shopping-cart] $ gen-idea sbt-classifiers
+> sbt
 
 > [shopping-cart] $ test
+
