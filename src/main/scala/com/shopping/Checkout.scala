@@ -2,6 +2,6 @@ package com.shopping
 
 object Checkout {
   def costOf(shoppingCart: ShoppingCart): BigDecimal = {
-      0
+     shoppingCart.fruits.map(_.price).sum
   }
 }
