@@ -36,7 +36,7 @@ To get you going with this application, just follow along:
 In a directory where you wish to clone this project from git:
 > git clone https://github.com/shettyshrikanth/shopping_cart.git
 
-Go into the application's new project directory (with the "cd" shown) and complete the following:
+Go into the application's new project directory (with the "cd" shown in the command prompt) and complete the following:
 > cd shopping-cart
 
 > sbt
