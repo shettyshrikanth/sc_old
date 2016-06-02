@@ -1,6 +1,7 @@
 package com.shopping
 
 import org.specs2.mutable.Specification
+import Checkout._
 
 class CheckoutTest extends Specification {
   "Shopping cart" should {
