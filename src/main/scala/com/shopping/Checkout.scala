@@ -12,7 +12,7 @@ object Checkout {
     var fruitsList = cart.fruits
 
     if (offers.length > 0) {
-      offers foreach (offer => { fruitsList = offer.applyOffer(fruitsList) })
+      offers foreach (offer => { fruitsList = offer(fruitsList) })
     }
     fruitsList
   }
