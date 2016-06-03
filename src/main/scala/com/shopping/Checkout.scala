@@ -1,7 +1,5 @@
 package com.shopping
 
-import scala.reflect.ClassTag
-
 object Checkout extends App {
 
   def costOf(shoppingCart: ShoppingCart, offers: Offer*): BigDecimal = {
@@ -14,12 +12,7 @@ object Checkout extends App {
 
     offers match {
       case Nil => cart
-      case offerList =>
-        applyOffers(      //recursive call
-          offerList(0) match {
-            case offer: BuyOneGetOneFree => offer(cart, 2)
-            case offer: BuyThreeForThePriceOfTwo => offer(cart, 3)
-          }, offerList.splitAt(1)._2)
+      case offerList => applyOffers(offerList(0)(cart), offerList.splitAt(1)._2)
     }
   }
 }
